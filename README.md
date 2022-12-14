@@ -1,7 +1,7 @@
 # Práctica Kaggle APC UAB 2022-23
 ### Nombre: Alberto Real Quereda 
 ### DATASET: Health Insurance Cross Sell Prediction
-### URL: [kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction)
+### URL: [Health Insurance Cross Sell Prediction](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction)
 ## Resumen
 Este caso Kaggle trata de una compañía de seguros que necesita unmodelo que les pueda predecir
 si los titulares de pólizas del año pasado también estarán interesados en el seguro de vehículos
