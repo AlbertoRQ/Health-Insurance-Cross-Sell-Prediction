@@ -1,0 +1,15 @@
+Python packages required:
+
+ - pandas
+ - numpy
+ - Sklearn
+ - seaborn
+ - random
+ - time
+ - matplotlib.pyplot
+ - math
+ - hyperopt
+ - plotly.io
+ - imblearn.combine
+ - imblearn.under_sampling
+ - warnings
