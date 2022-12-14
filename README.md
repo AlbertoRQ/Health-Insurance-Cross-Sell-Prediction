@@ -65,7 +65,7 @@ Como el atributo "Response" no está balanceado, tenemos que usar algunos metodo
 
 | Model | Hiperparametres | Accuracy | F1-score | 
 | ----- | --------------- | -------- | -------- |
-| Random Forest      (RandomUnderSampler)(Grid Search)| max_depth= None, n_estimators=257, bootstrap = True | 78% | 0.802 |
+| Random Forest      (RandomUnderSampler)(Grid Search)| max_depth= None, n_estimators=820, bootstrap = True | 77% | 0.800 |
  
 
 ## Conclusiones
@@ -77,12 +77,15 @@ hiparparametros son:
 
 | n_estimators | max_depth | Bootstrap |
 | ------------ | --------- | --------- |
-|      257     |    None   |    True   |
+|      800     |    None   |    True   |
 
 Escogemos los hiperparámetros del “Random Search” debido a que estos clasifican bien un 78 %
 nuestros datos una vez habiendo aplicado el “RandomUnderSampler”, y también, estos hiperpará-
 metros son los que mejor clasifican las muestras eliminadas después de aplicar undersampling siendo
-la accuracy de estos un 64 % aproximadamente.
+la accuracy de estos un 63 % aproximadamente. Aunque los hiperparámetros del “Grid Search” dan
+mejores resultados, estos tampoco son tan significantes para que compense el tiempo de ejecución
+que conlleva buscarlos.
+
 Resumiendo, para hacer una buena clasificación en nuestro dataset hemos utilizado, undersam-
 pling con el algoritmo “RandomUnderSampler” con el fin de balancear el dataset y “Random Forest”
 con el criterio “gini” y los hiperparámetros dados por el algoritmo “Random Search” con el fin de
