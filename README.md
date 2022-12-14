@@ -77,7 +77,7 @@ hiparparametros son:
 
 | n_estimators | max_depth | Bootstrap |
 | ------------ | --------- | --------- |
-|      800     |    None   |    True   |
+|      820     |    None   |    True   |
 
 Escogemos los hiperparámetros del “Random Search” debido a que estos clasifican bien un 78 %
 nuestros datos una vez habiendo aplicado el “RandomUnderSampler”, y también, estos hiperpará-
