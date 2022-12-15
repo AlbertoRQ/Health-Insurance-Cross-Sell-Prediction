@@ -65,7 +65,7 @@ Como el atributo "Response" no está balanceado, tenemos que usar algunos metodo
 
 | Model | Hiperparametres | Accuracy | F1-score | 
 | ----- | --------------- | -------- | -------- |
-| Random Forest      (RandomUnderSampler)(Grid Search)| max_depth= None, n_estimators=820, bootstrap = True | 77% | 0.800 |
+| Random Forest      (RandomUnderSampler)(Random Search)| max_depth= None, n_estimators=1090, bootstrap = True | 79% | 0.808 |
  
 
 ## Conclusiones
@@ -75,14 +75,14 @@ seguro de coche o no es el Random Forest con el criterio “entropy”, aunque e
 Como hemos visto en el apartado de hiperparámetros, para el Random Forest (gini), los mejores
 hiparparametros son:
 
-| n_estimators | max_depth | Bootstrap |
-| ------------ | --------- | --------- |
-|      820     |    None   |    True   |
+| n_estimators  | max_depth | Bootstrap |
+| ------------- | --------- | --------- |
+|      1090     |    None   |    True   |
 
-Escogemos los hiperparámetros del “Random Search” debido a que estos clasifican bien un 78 %
+Escogemos los hiperparámetros del “Random Search” debido a que estos clasifican bien un 79%
 nuestros datos una vez habiendo aplicado el “RandomUnderSampler”, y también, estos hiperpará-
 metros son los que mejor clasifican las muestras eliminadas después de aplicar undersampling siendo
-la accuracy de estos un 63 % aproximadamente. Aunque los hiperparámetros del “Grid Search” dan
+la accuracy de estos un 64 % aproximadamente. Aunque los hiperparámetros del “Grid Search” dan
 mejores resultados, estos tampoco son tan significantes para que compense el tiempo de ejecución
 que conlleva buscarlos.
 
